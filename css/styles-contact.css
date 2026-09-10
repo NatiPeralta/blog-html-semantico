@@ -1,0 +1,180 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+    background-color: #202020;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #e9e7e7;
+    transition: 0.4s;
+}
+
+a:hover{
+    color: #a89d9d;
+}
+
+/* Navbar */
+#navbar {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #333;
+}
+
+#navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #e9e7e7;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* conteúdo principal */
+.container {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* formulário de contato */
+#contact-container {
+    flex: 3 1 0;
+}
+
+#contact-container h3 {
+    color: #dbdbdb;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+#contact-container p {
+    color: #dbdbdb;
+    margin-bottom: 1.5rem;
+}
+
+#contact-container form {
+    color: #dbdbdb;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#contact-container input,
+#contact-container textarea {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin: 10px;
+}
+
+#contact-container input::placeholder,
+#contact-container textarea::placeholder {
+    color: #dbdbdb;
+}
+
+#contact-container textarea {
+    display: block;
+    width: 445px;
+    height: 150px;
+    margin: 0 auto 20px;
+}
+
+#contact-container input[type="submit"] {
+    display: block;
+    background-color: #1c75bd;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* barra lateral */
+#sidebar {
+    flex: 1 1 0;
+    margin-bottom: 0;
+}
+
+#search-bar,
+#categories,
+#tags {
+    padding: 1.5rem;
+    border: 1px solid #333;
+    margin-bottom: 1rem;
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: #e9e7e7;
+}
+
+#search-bar form {
+    display: flex;
+}
+
+#search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+}
+
+#search-bar input[type="submit"] {
+    cursor: pointer;
+    background-color: #1c75bd;
+    color: #fff;
+    border: none;
+}
+
+#search-bar input[type="text"]::placeholder {
+    color: #dbdbdb;
+}
+
+#categories li {
+    margin-bottom: 1rem;
+}
+
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tags-container a {
+    background-color: #333;
+    padding: .5rem .7rem;
+    border-radius: 0.3rem;
+}
+
+/* Rodapé */
+#footer {
+    border-top: 2px solid #333;
+    padding: 3rem;
+    text-align: center;
+}
+
+#footer h2,
+#footer p {
+    margin-bottom: 1rem;
+    color: #dbdbdb;
+}
+
+/* Responsivo */
+@media(max-width: 450px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
